@@ -1,0 +1,1 @@
+zhangs-MacBook-Pro:Desktop leone$ cd /Users/leone/Desktopzhangs-MacBook-Pro:Desktop leone$ mkdir MH8811_02zhangs-MacBook-Pro:Desktop leone$ cd /Users/leone/Desktop/MH8811_02zhangs-MacBook-Pro:MH8811_02 leone$ touch my_filezhangs-MacBook-Pro:MH8811_02 leone$ cd ..zhangs-MacBook-Pro:Desktop leone$ rm -rf MH8811_02
