@@ -5,6 +5,8 @@ Created on Fri Oct  4 20:39:30 2019
 
 @author: leone
 """
+
+##################################################program c2
 lst=[9,41,12,3,74,15]
 
 def my_min(lst):
@@ -61,8 +63,47 @@ print('the average number is:',my_average(lst))
 print('the median number is:',my_median(lst))
 print('the range of the list is:',my_range(lst))
 
-        
+##################################################program c3        
+def getfilelines(file):
+    fhandle=open(file)
+    lines=[]
+    for line in fhandle:
+        line=line.rstrip()
+        if line:
+            line=float(line)
+            lines.append(line)
+    return lines 
 
+#basic descriptive statistics
+data=getfilelines('data.csv')
+print(data)
+print('the max number is:',my_max(data))
+print('the min number is:',my_min(data))
+print('the average number is:',my_average(data))
+print('the median number is:',my_median(data))
+print('the range of the list is:',my_range(data))
 
-                
+##################################################program h1
+
+#define variance function 
+def my_variance(data):
+    n=sum1=sum2=0
+    for x in data:
+        n+=1
+        sum1+=x
+    mean=sum1/n
+    
+    for x in data:
+        sum2+=(x-mean)*(x-mean)
+    variance=sum2/(n-1)
+    return variance 
+
+#read data
+    
+data=getfilelines('data.csv')
+
+##calulate and output result
+
+my_variance(data)
+print('the sample variance is:',my_variance(data))       
         
